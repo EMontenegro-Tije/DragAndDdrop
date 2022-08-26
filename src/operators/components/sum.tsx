@@ -18,12 +18,12 @@ export const Sum = () => {
     console.log("structureSum: ", structureSum);
   }, [structureSum]);
 
-  const onchangeLeftInput = (event) => {
+  const onchangeLeftInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     let valueLeft = event.target.value;
     setLeft(valueLeft);
   };
 
-  const onchangeRightInput = (event) => {
+  const onchangeRightInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     let valueRight = event.target.value;
     setRight(valueRight);
   };

@@ -1,11 +1,17 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
+interface Ioperator {
+    onchangeLeftInput : React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
+    onchangeRightInput : React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
+    children: JSX.Element;
+}
+
 export const Operator = ({
   onchangeLeftInput,
   onchangeRightInput,
   children
-}) => {
+}: Ioperator) => {
   return (
     <>
       <Box
