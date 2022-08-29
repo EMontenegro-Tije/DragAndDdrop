@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AddIcon from "@material-ui/icons/Add";
+import ShortTextIcon from '@mui/icons-material/ShortText';
 import { Operator } from "./operator";
 export const Equal = () => {
   const [left, setLeft] = useState("");
@@ -34,7 +34,7 @@ export const Equal = () => {
         onchangeLeftInput={onchangeLeftInput}
         onchangeRightInput={onchangeRightInput}
       >
-        <AddIcon />
+        <ShortTextIcon />
       </Operator>
     </>
   );
